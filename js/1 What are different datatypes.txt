@@ -1,0 +1,16 @@
+1. What are different datatypes in javascript?
+- There are two different datatypes in javascript `primitive` and `non-primitive`. Primitive is compared by value while the non-primitive is compared by reference.
+2. What is Type coercion?
+- Type coercion is when an integer is converted into a string when added with a string type datatype. example. 9+'5'=95(which is a string).
+- To curb this issue of type coercion use (===) strict comparison in contrast to (==) comparison.
+3. What is var,let and const?
+- var is functional scoped, meaning it can be accessed by any nested function. 
+##### Remember var is functional scoped does'nt mean it also be accessed by the parent function if var is declared within a nested function. 
+- let and const are block scoped meaning they are accessible only inside the curly braces where they are declared and if accessed outside of the scope, error will be thown.
+4. Why using a global variable is bad?
+- It can be bymistakenly changed in any part of the code and this can break the whole system.
+5. Truthy and Falsy values.
+- false,empty string,undefined,null,0,Nan all are considered as false in javascript. Any non empty data is considered as true in javascript.
+6. What is function hoisting?
+- A function is hoisted to  the top of the scope when the code is compiled. In other words function can be accessed in the code even before their declaration.
+7. 
