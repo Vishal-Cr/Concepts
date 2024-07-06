@@ -55,9 +55,9 @@
 
 - The Bus Delivers: The message bus delivers messages to all applications subscribed to the relevant topic. It's like the bulletin board automatically showing updates to interested colleagues.
 
-## Enterprise Message Bus vs Message Bus
+## Enterprise Message Bus vs Message Queue
 
-- Message bus is based on point-to-point data model where Enterprise Message Bus is based on publish-subscribe data model. However, message bus can also use point-to-point model.
+- Message bus is based on point-to-point data model whereas Enterprise Message Bus is based on publish-subscribe data model. However, message bus can also use point-to-point model.
 - Message queue like a waiting line, where messages are put in a queue and other applications process them accordingly.The message bus is like a bulletin board, where anyone can post message, people choose which topic they're interested in.
 - Message queue can give reliable message delivery while message bus can't gurantee the order of messages to be delivered.
 
