@@ -59,7 +59,7 @@
 
 - Message bus is based on point-to-point data model whereas Enterprise Message Bus is based on publish-subscribe data model. However, message bus can also use point-to-point model.
 - Message queue like a waiting line, where messages are put in a queue and other applications process them accordingly.The message bus is like a bulletin board, where anyone can post message, people choose which topic they're interested in.
-- Message queue can give reliable message delivery while message bus can't gurantee the order of messages to be delivered.
+- Message queue can give reliable message delivery while message bus can't guarantee the order of messages to be delivered.
 
 ## Conclusion
 
