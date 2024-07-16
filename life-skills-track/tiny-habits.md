@@ -41,7 +41,7 @@ Changing habits is not just about behavior change but identity change. :fire: :f
 - If you want your habits to stick, you need to change your identity. See yourself as someone who prioritizes sleep (morning person) or is financially responsible.
 - Each positive action reinforces this new identity. Every workout makes you more of an athlete, every meditation session strengthens your identity as someone who prioritizes well-being.
 
-## 4. Book Summary of Atomic Habits
+## 4. Book Summary of Atomic Habits :wave:
 
 #### What is the book's perspective about Identity?
 
@@ -57,7 +57,7 @@ if you want to establish a new habit, consider attaching it to an existing routi
 - Be specific about your intention on doing the habit. 
 - Set clear boundaries.
 - change your mindset about the habit.
-## Reflection
+## Reflections :mirror:
 
 #### Pick one habit that you would like to do more of? What are the steps that you can take to make it make the cue obvious or the habit more attractive or easy and or response satisfying?
 - I want to practise writing more code.
