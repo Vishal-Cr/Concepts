@@ -52,14 +52,31 @@
  - -19- `document.getElementsByTagName`: gets the element with the given tagName(descendents). 
  - `document.getElementByClassName` :gets all descendants of the matching classes.
  - Innerhtml--changes the content of the inner html but advised not to used.
- ## Accessing the DOM nodes
+ ## Accessing the DOM nodes :leaves:
  - `childnodes`- array of all the child elements of a parentnode.
  - `firstchild`, `lastchild` -- gets the firstChild and the lastchild of given element, if no child, returns null
  - `previousSibling`,`nextSibling`--returns previous element and next DOM element respectively.
  - `removeChild`-Removes a child Dom element from the DOM
  - `appendChild`- adds a new child element to the DOM.
  
+ ##     The Problems with Line Breaks: :warning:
+ - `childNodes` fetches the linebreaks also if it exsists among the child nodes.
+ - `children` only fetches the child nodes within the parent node.
+   use  firstElementChild
+- `firstChild` also can potentially give a text node(linebreak) as value.
+- use `firstElementChild` instead.
+- Similarly for `lastChild` and `lastElementChild`
+-`nextSibling` for `nextElementSibling`.
+-`previousSibling` and `previousElementSibling`
 
-    
-   
-   
+## Creating New Elements using DOM
+-`let createdDiv= document.createElement('div')`-- creates a new div element.
+- To add class-- `createdDiv.className='hello'`--will add a class of hello.
+-createdDiv.id='createdId'
+-`setAttribute` `createdDiv.setAttribute('title','hello-div')` sets the attribute of createdDiv as title with value hello-div.
+- TO add text to the div. first create the text, `let textNode=document.createTextNode('This is text')
+createdDiv.appendChild(textNode);
+- Note: :exclamation: you have to insert it into the DOM to show up on th screen.
+insertBefore, insertAfter can be used.
+`
+
