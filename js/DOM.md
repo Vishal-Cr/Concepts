@@ -1,7 +1,7 @@
 
-## Javascript DOM notes :robot:
+# Javascript DOM notes :robot:
 
-# **Examine the Document Object**
+## **Examine the Document Object**
 
  **1. `console.dir(document);`**
 - Outputs a detailed, interactive list of the properties of the `document` object.
@@ -15,8 +15,8 @@
  **4. `console.log(document.title);`**
 - Logs the title of the document, which is set in the `<title>` tag within the `<head>` section of the HTML.
 
- **5. `//document.title = 123;` (Commented Out)**
-- This line is commented out. If uncommented, it would set the document’s title to `123`.
+ **5. `document.title = 123;`**
+-  It would set the document’s title to `123`.
 
  **6. `console.log(document.doctype);`**
 - Logs the document type declaration (e.g., `<!DOCTYPE html>`).
@@ -79,4 +79,46 @@ createdDiv.appendChild(textNode);
 - Note: :exclamation: you have to insert it into the DOM to show up on th screen.
 insertBefore, insertAfter can be used.
 `
+
+
+# 🌟 Event Bubbling & Capturing
+
+
+```markdown
+
+## Overview
+- **🔽 Event Capturing (Trickling Down)**: The event is first captured by the outermost element and propagated to the element where the event is triggered.
+- **🔼 Event Bubbling (Bubbling Up)**: The event starts from the innermost event triggered element and bubbles up to the outermost element.
+
+## 🛠️ Example Structure
+```html
+<div id="grandparent">
+    <div id="parent">
+        <div id="child"></div>
+    </div>
+</div>
+```
+
+### 🔄 Event Flow:
+1. **🔽 Capturing Phase (Trickling Down)**:
+    - The event is first captured by the `#grandparent` div.
+    - Then it is passed down to the `#parent` div.
+    - Finally, it reaches the `#child` div.
+
+2. **🔼 Bubbling Phase (Bubbling Up)**:
+    - The event is triggered in the `#child` div.
+    - It bubbles up to the `#parent` div.
+    - Finally, it reaches the `#grandparent` div.
+
+## 📝 Event Listener with `useCapture`
+```javascript
+element.addEventListener('click', () => {
+    // Your code here
+}, useCapture);
+```
+- `useCapture`: A boolean value.
+    - **✅ true**: The event handler is executed in the capturing phase.
+    - **❌ false**: The event handler is executed in the bubbling phase.
+```
+
 
