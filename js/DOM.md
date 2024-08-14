@@ -1,5 +1,5 @@
 
-# Javascript DOM notes :robot:
+# Javascript DOM  :robot:
 
 The Document Object Model (DOM) is crucial in web development. The DOM is a programming interface for web documents. It represents the document as a tree of objects, enabling dynamic content manipulation. JavaScript interacts with the DOM to create interactive web experiences.
 
